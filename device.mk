@@ -122,6 +122,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/perf,$(TARGET_COPY_OUT_VENDOR)/etc)
 
+# Properties
+include $(LOCAL_PATH)/configs/properties/vendor_logtag.mk
+
 # Recovery
 PRODUCT_PACKAGES += \
     init.recovery.mt6886.rc
