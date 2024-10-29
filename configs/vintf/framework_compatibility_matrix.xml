@@ -1,9 +1,13 @@
-<!--
-    Input:
-        vendor/noth/utils/build/device_framework_compatibility_matrix.xml
-        device/mediatek/system/common/device_framework_matrix.xml
--->
 <compatibility-matrix version="8.0" type="framework">
+    <hal format="aidl" optional="true">
+        <name>android.hardware.bluetooth.audio</name>
+        <version>1</version>
+        <interface>
+            <name>IBluetoothAudioProviderFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+
     <hal format="aidl" optional="true">
         <name>android.hardware.biometrics.fingerprint</name>
         <version>3</version>
